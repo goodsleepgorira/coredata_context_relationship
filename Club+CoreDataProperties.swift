@@ -1,5 +1,6 @@
 //
 //  Club+CoreDataProperties.swift
+
 //
 
 import Foundation
