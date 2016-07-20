@@ -8,6 +8,7 @@ import CoreData
 extension Student {
 
     @NSManaged var name: String?
-    @NSManaged var activity: String?
+    @NSManaged var age: NSNumber?
+    @NSManaged var club: Club?
 
 }

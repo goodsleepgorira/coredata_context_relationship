@@ -63,21 +63,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return coordinator
     }()
     
-    
-    lazy var managedObjectContext: NSManagedObjectContext = {
+
+    //生徒用の管理オブジェクトコンテキスト
+    lazy var contextStudent: NSManagedObjectContext = {
         let coordinator = self.persistentStoreCoordinator
-        var managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
-        managedObjectContext.persistentStoreCoordinator = coordinator
-        return managedObjectContext
+        var contextStudent = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+        contextStudent.persistentStoreCoordinator = coordinator
+        return contextStudent
+    }()
+    
+
+    //部活用の管理オブジェクトコンテキスト
+    lazy var contextClub: NSManagedObjectContext = {
+        let coordinator = self.persistentStoreCoordinator
+        var contextClub = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+        contextClub.persistentStoreCoordinator = coordinator
+        return contextClub
     }()
     
     
-    //2つめの管理オブジェクトコンテキストを追加
-    lazy var managedObjectContext2: NSManagedObjectContext = {
-        let coordinator = self.persistentStoreCoordinator
-        var managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
-        managedObjectContext.persistentStoreCoordinator = coordinator
-        return managedObjectContext
-    }()
     
 }

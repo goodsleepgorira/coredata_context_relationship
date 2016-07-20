@@ -21,29 +21,44 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UbW-6H-ZUP">
-                                        <rect key="frame" x="122" y="55" width="140" height="30"/>
+                                        <rect key="frame" x="117" y="43" width="140" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGR-4Z-sqS">
-                                        <rect key="frame" x="80" y="59" width="34" height="21"/>
+                                        <rect key="frame" x="75" y="47" width="34" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="所属部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzG-Xe-ZeE">
-                                        <rect key="frame" x="63" y="139" width="51" height="21"/>
+                                        <rect key="frame" x="58" y="91" width="51" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLZ-xP-507">
-                                        <rect key="frame" x="122" y="130" width="140" height="30"/>
+                                        <rect key="frame" x="117" y="87" width="140" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生徒登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNt-1s-GsA">
+                                        <rect key="frame" x="24" y="14" width="68" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxX-d1-ltq">
+                                        <rect key="frame" x="61" y="139" width="199" height="30"/>
+                                        <color key="backgroundColor" red="0.87253605769999998" green="0.59212896479999999" blue="0.28896886799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="コンテキストに追加"/>
+                                        <connections>
+                                            <action selector="pushAddStudent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3D4-kI-Jdh"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJh-Ky-NcW">
-                                        <rect key="frame" x="63" y="208" width="199" height="30"/>
+                                        <rect key="frame" x="61" y="185" width="199" height="30"/>
                                         <color key="backgroundColor" red="0.87253605769230769" green="0.59212896479320509" blue="0.28896886801437216" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="保存">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,12 +67,16 @@
                                             <action selector="pushStudentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wv3-Je-uxR"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生徒登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNt-1s-GsA">
-                                        <rect key="frame" x="24" y="14" width="68" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAP-I6-9zL">
+                                        <rect key="frame" x="61" y="236" width="199" height="30"/>
+                                        <color key="backgroundColor" red="0.87253605769999998" green="0.59212896479999999" blue="0.28896886799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="生徒一覧表示">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="displayStudent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwl-qE-Tl6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -65,24 +84,24 @@
                                 <rect key="frame" x="0.0" y="287" width="320" height="281"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAb-pz-jpj">
-                                        <rect key="frame" x="120" y="134" width="140" height="30"/>
+                                        <rect key="frame" x="120" y="92" width="140" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="顧問" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVT-Hf-hnF">
-                                        <rect key="frame" x="78" y="138" width="34" height="21"/>
+                                        <rect key="frame" x="72" y="101" width="34" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="部名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxA-oL-bFF">
-                                        <rect key="frame" x="78" y="71" width="34" height="21"/>
+                                        <rect key="frame" x="72" y="52" width="34" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbw-Gk-CZ7">
-                                        <rect key="frame" x="61" y="208" width="199" height="30"/>
+                                        <rect key="frame" x="61" y="186" width="199" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.53854677129999995" blue="0.98409598210000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="保存">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,14 +113,34 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="部活動登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPb-v9-xWu">
                                         <rect key="frame" x="21" y="19" width="85" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYj-tB-SCI">
-                                        <rect key="frame" x="120" y="62" width="140" height="30"/>
+                                        <rect key="frame" x="120" y="48" width="140" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZR-z5-XKw">
+                                        <rect key="frame" x="61" y="141" width="199" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.53854677129999995" blue="0.98409598210000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="コンテキストに保存">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pushAddClub:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTX-Uw-tzM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZd-7S-inx">
+                                        <rect key="frame" x="60" y="235" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.53854677129999995" blue="0.98409598210000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="部活一覧表示">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="displayClub:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHg-lv-y1E"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.78945833444595337" green="0.87349194288253784" blue="0.94856303930282593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
